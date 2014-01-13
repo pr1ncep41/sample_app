@@ -3,19 +3,17 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-group :development do
+group :test,:development do
 	# Use sqlite3 as the database for Active Record
 	gem 'sqlite3'
-	gem 'rspec-rails', "~> 2.8"
+	gem "rspec-rails", "~> 2.8"
+
 end
 
 group :production do
 	gem 'pg'
 end
 
-group :test do
-	gem 'rspec', "~> 2.8"
-end
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
